@@ -5,20 +5,10 @@ using namespace std;
 #pragma GCC push_options
 #pragma GCC optimize ("unroll-loops")
 
-#define gcd(a, b) (b == 0) ? a : gcd(b, a%b)
-#define rup(a) ((a+0.5) >= (int(a)+1)) ? (int(a)+1) : int(a)
-#define rdown(b) (int(b))
-#define fnd(x, y) (x).find(y) != (x).end()
-
-#define scan(x) { while((x=getchar())<'0'); for (x-='0'; '0'<= (_=getchar()); x = (x<<3)+(x<<1)+_-'0');} while(0)
-char _;
-
 #define vt vector
-typedef unsigned long long ull;
 typedef long long ll;
 typedef long double ld;
 typedef pair<int, int> pi;
-//typedef tree<int, null_type, less<int>, rb_tree_tag, tree_order_statistics_node_update> new_data_set;
 
 const ll INF = 0x3f3f3f3f;
 const ll LLINF = 0x3f3f3f3f3f3f3f3f;
@@ -29,10 +19,6 @@ const ll MOD = 1e9 +7;
 #define se second
 #define mpair make_pair
 #define pb push_back
-#define nl cout << "\n"
-
-template <typename C> void UNIQUE(vector<C> &v) { sort(all(v)); v.resize(unique(all(v)) - v.begin()); } 
-template <typename U> void DECREASING(vector<U> &v) { sort(all(v), greater<U>()); }
 
 template<class T> void read(T& x) {
 	cin >> x;
