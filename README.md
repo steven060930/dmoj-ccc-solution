@@ -1,1 +1,1 @@
-# dmoj-solution
+# dmoj-ccc-problems-solution
