@@ -102,14 +102,13 @@ template<class A> void write(vt<vt<A>> &v) {
 int main() {
 	ios_base::sync_with_stdio(false);
 	cin.tie(nullptr);
-	int t= 1;
-	for (int i=0; i<t; i++) {
-		int a, b, c, d;
-		read(a, b, c,d);
-		if ((a == 8 || a == 9) && (d == 9 || d == 8) && b == c) {
-			print("ignore");
-		}
-		else {print("answer"); }
-	}
+	int a, b, c, d;
+	read(a, b, c, d);
+	print(0, a, a+b, a+b+c, a+b+c+d);
+	print(a, 0, b, b+c, b+c+d);
+	print(a+b, b, 0, c, c+d);
+	print(a+b+c, b+c, c, 0, d);
+	print(a+b+c+d, b+c+d, c+d, d, 0);
 	return 0;
 }
+
