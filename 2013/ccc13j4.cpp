@@ -15,6 +15,6 @@ int main() {
         if (sum > t) break;
         else cnt++;
     }
-    printf("%d\n", cnt-1);
+    printf("%d\n", cnt);
     return 0;
 }
