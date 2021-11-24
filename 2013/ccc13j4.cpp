@@ -11,9 +11,9 @@ int main() {
         scanf("%d", &v[i]);
     sort(v, v+n);
     for (int i = 0; i < n; i++) {
-        sum += v[i]; cnt++;
-        if (sum > t)
-            break;
+        sum += v[i];
+        if (sum > t) break;
+        else cnt++;
     }
     printf("%d\n", cnt-1);
     return 0;
