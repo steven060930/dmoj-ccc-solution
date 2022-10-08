@@ -55,9 +55,10 @@ int main() {
 			while (c.find(_DIR, found) != string::npos || found > c.size()) {
 				cout << "Link from " << URL << " to ";
 				string dest = print(c, c.find(_DIR, found));
-				cout << print(c, c.find(_DIR, found)) << '\n';
-				if (g.find(URL) == g.end()) 
-				{ vector<string> tmp={}; tmp.push_back(dest), g.insert(make_pair(URL, tmp)); }
+				cout << dest << '\n';
+				if (g.find(URL) == g.end()) { 
+					vector<string> tmp={}; tmp.push_back(dest), g.insert(make_pair(URL, tmp));
+				}
 				else
 					g[URL].push_back(dest);
 
