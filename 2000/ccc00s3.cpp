@@ -34,10 +34,8 @@ bool search(string src, string dest) {
 			return true;
 
 		for (auto &e: g[cur]) {
-			if (!vis[e]) {
-				vis[e] = 1;
-				q.push(e);
-			}
+			if (!vis[e])
+				vis[e] = 1, q.push(e);
 		}
 	}
 	return false;
@@ -83,5 +81,3 @@ int main() {
 			cout << "Can't surf from " << d1 << " to " << d2 << '.' << '\n';
 	}
 }
-
-
